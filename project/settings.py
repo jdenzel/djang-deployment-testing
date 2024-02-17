@@ -11,8 +11,6 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-
-# Build paths inside the project like this: BASE_DIR / 'subdir'.
 import environ
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +23,6 @@ if DEBUG:
     ALLOWED_HOSTS = ['*']
 else:
     ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS')
-    print("DJANGO_ALLOWED_HOSTS:", ALLOWED_HOSTS)
 SECRET_KEY = env.str('DJANGO_SECRET_KEY')
 DATABASES = {
     "default": env.db("DATABASE_URL")
@@ -57,10 +54,8 @@ LOGGING = {
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-+l2j&fs)m29a3sm8g=cy5zbkj1#6(nlh$j+@=u_5l^f$!kj_5='
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = ['dtesting.applikuapp.com']
+# ALLOWED_HOSTS = ['dtesting.applikuapp.com']
 
 
 # Application definition
