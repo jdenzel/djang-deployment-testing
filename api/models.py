@@ -13,8 +13,8 @@ class TimeClock(models.Model):
     ]
     employee = models.ForeignKey(User, on_delete=models.CASCADE)
     date = models.DateField(auto_now_add=True)
-    clock_in_time = models.DateTimeField(auto_now_add=True)
-    clock_out_time = models.DateTimeField(null=True, blank=True)
+    clock_in_time = models.TimeField(auto_now_add=True)
+    clock_out_time = models.TimeField(null=True, blank=True)
     location = models.CharField(default='none', blank='true', max_length=50)
     role = models.CharField(choices=ROLES, default='none', max_length=20)
 
