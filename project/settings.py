@@ -88,6 +88,7 @@ MIDDLEWARE = [
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "https://dtesting.applikuapp.com",
+    "http://localhost:3000",
 ]
 
 CSRF_TRUSTED_ORIGINS = [
