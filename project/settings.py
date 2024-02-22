@@ -90,7 +90,7 @@ CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "https://dtesting.applikuapp.com",
     "http://localhost:3000",
-    "http://localhost:5173/"
+    "http://localhost:5173"
     
 ]
 
